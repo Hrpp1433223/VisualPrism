@@ -60,11 +60,25 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 #### Evaluation results 
 | Model           | #Tokens | GQA  | VizWiz | VQAv2 | MM-Vet | Avg. Score |
 |----------------|---------|------|--------|--------|--------|-------------|
-| LLaVA-1.5      | 576     | 62.0 | 50.0   | 78.5   | 31.1   | 62.0        |
-| TokenPacker    | 144     | 60.6 | 52.0   | 76.5   | 33.0   | 61.8        |
-| **VisualPrism**| **144** | 59.9 | **53.3** | 76.3 | **34.5** | **62.4** |
-| VisualPrism    | **64**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
-
+|  VisualPrism -7b  | **144** | 59.9 | 53.3   | 76.3   | 34.5   | 62.4        |
+|  VisualPrism-7b   | **64**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
+| VisualPrism-Qwen-7b  | **144**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
+| VisualPrism-Qwen-13b  | **144**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
+#### Ablation results
+##### Ablation For Modules Proposed
+| TPQP | HKVE | VQAv2  | GQA |
+|---------|---------|-------|-------|
+|❌|❌|61.9|56.7|
+|✔️|❌|62.6|57.5|
+|❌️|✔️|62.4|57.5|
+|✔️|✔️|62.7|57.6|
+##### Ablation For 3 Paths in TPQP
+| Wavelet | Multi-Sacal Conv | Identity | VQAv2  | GQA |
+|---------|---------|-------|-------|
+|❌|❌|✔️|61.9|56.7|
+|✔️|❌|✔️|62.5|57.2|
+|✔️|✔️|❌|62.6|57.4|
+|✔️|✔️|✔️|62.6|57.5|
 ## Model Zoo
 
 | Model              |  Max Res.   |  Compre. Ratio  |  Token Num.  |  Max Patch Num.  |                                           Training Data                                            | Download                                                                              |
@@ -77,3 +91,23 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 | VisualPrism-13b-Qwen |  336x336  |       1/4       |     144     |         -         |                                             1.2M+1.5M                                              | [checkpoints](https://huggingface.co/) |
 
 ## Visualization ✨
+VisualPrism provide visualization code for getting attention map of LLMs in LLaVA-series models.
+1. Install packages
+```
+conda activate visualprism
+pip install opencv-python
+```
+**Note**: VisualPrism uses `numpy` version == 1.26.4, remember to switch back to correct version after  `opencv-python` installation
+ 2. Visualize the attention map
+ ```shell
+bash scripts/visualization.sh # Visualize attention distribution
+bash scripts/heatmap.sh # Visualize attention map of LLMs
+```
+Hope the code will help you in your research🌷.
+
+## Acknowledgement 💌
+- [LLaVA-v1.5](https://github.com/haotian-liu/LLaVA)
+- [TokenPacker](https://github.com/CircleRadon/TokenPacker)
+  
+## More ## 
+For more recent related works, please refer to this repo of  [Awesome-Token-Compress](https://github.com/daixiangzi/Awesome-Token-Compress).
