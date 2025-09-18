@@ -74,7 +74,7 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 |✔️|✔️|62.7|57.6|
 ##### Ablation For 3 Paths in TPQP
 | Wavelet | Multi-Sacal Conv | Identity | VQAv2  | GQA |
-|---------|---------|-------|-------|
+|---------|---------|-------|-------|-------|
 |❌|❌|✔️|61.9|56.7|
 |✔️|❌|✔️|62.5|57.2|
 |✔️|✔️|❌|62.6|57.4|
