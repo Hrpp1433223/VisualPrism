@@ -1,13 +1,5 @@
 # VisualPrism
 
-## Table of Contents
-- [Introduction](#Introduction)
-- [Install](#Install)
-- [Train](#Train)
-- [Evaluation](#Evaluation)
-- [Model Zoo](#Model-Zoo)
-- [Visualization](#Visualization)
-
 ## Introduction	🌈
 **VisualPrism** is an enhancement over [LLaVA](https://github.com/haotian-liu/LLaVA), introducing a **guide-then-compress** strategy to significantly reduce visual tokens while preserving rich semantics. Inspired by the **fovea–periphery coordination** in human vision, VisualPrism injects explicit visual priors to improve efficiency and accuracy in vision-language understanding.
 
