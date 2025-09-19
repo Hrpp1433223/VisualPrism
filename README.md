@@ -5,7 +5,7 @@
 - [Install](#Install)
 - [Train](#Train)
 - [Evaluation](#Evaluation)
-- [Model Zoo](#Model Zoo)
+- [Model Zoo](#Model-Zoo)
 - [Visualization](#Visualization)
 
 ## Introduction	🌈
