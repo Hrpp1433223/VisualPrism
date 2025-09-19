@@ -98,7 +98,8 @@ conda activate visualprism
 pip install opencv-python
 ```
 **Note**: VisualPrism uses `numpy` version == 1.26.4, remember to switch back to correct version after  `opencv-python` installation
- 2. Visualize the attention map
+
+2. Visualize the attention map
  ```shell
 bash scripts/visualization.sh # Visualize attention distribution
 bash scripts/heatmap.sh # Visualize attention map of LLMs
