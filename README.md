@@ -37,9 +37,6 @@ pip install flash-attn --no-build-isolation
 
 ## Train 🧠
 
-#### Dataset
-To make a fair comparison, we use the same training data as in [LLaVA-1.5](https://github.com/haotian-liu/LLaVA), i.e., [LLaVA-Pretrain-558K](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain/tree/main) for stage 1, and  [Mix665k](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/tree/main) for stage 2.
-
 #### Training 
 - Stage1: Image-Text Alignment Pre-training
 ```shell
@@ -49,8 +46,9 @@ bash scripts/v1_5/pretrain.sh
 ```shell
 bash scripts/v1_5/finetune.sh
 ```
-Note: Using `--scale_factor` to control compression ratio, support [2,3,4]
-
+Note: 
+- Using `--scale_factor` to control compression ratio, support [2,3,4]
+- You can use regularization term by`--use_sinkhorn_lsd` and turn off by `--no_use_sinkhorn_lsd` for more details please check the [original paper](https://github.com/2018cx/SinKD)
 ## Evaluation 📊
 
 #### Evaluation process 
