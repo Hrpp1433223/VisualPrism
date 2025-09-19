@@ -2,10 +2,10 @@
 
 ## Table of Contents
 - [Introduction](#Introduction)
-- [Install](#install)
-- [Train](#train)
-- [Evaluation](#evaluation)
-- [Model Zoo](#Modelzoo)
+- [Install](#Install)
+- [Train](#Train)
+- [Evaluation](#Evaluation)
+- [Model Zoo](#Model Zoo)
 - [Visualization](#Visualization)
 
 ## Introduction	🌈
@@ -15,6 +15,7 @@
 - 🔀 **Triple-Path Query Projection (TPQP)**: Decomposes visual queries into global, local, and identity-based components.
 - 🧩 **Hierarchical Key-Value Encoding (HKVE)**: Structures visual information across scales for better alignment and retrieval.
 - 🔌 **Modular & Compatible**: Drop-in replacement for LLaVA's projector, compatible with most MLLM pipelines.
+![VisualPrism Architecture](assets/VisualPrism_paper.drawio.png)
 
 ## Install 🛠️
 1. Clone this repository and navigate to VisualPrism folder
@@ -77,6 +78,7 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 |✔️|❌|✔️|62.5|57.2|
 |✔️|✔️|❌|62.6|57.4|
 |✔️|✔️|✔️|62.6|57.5|
+
 ## Model Zoo
 
 | Model              |  Max Res.   |  Compre. Ratio  |  Token Num.  |  Max Patch Num.  |                                           Training Data                                            | Download                                                                              |
