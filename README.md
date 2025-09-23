@@ -73,15 +73,16 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 
 ## Model Zoo
 
-| Model              |  Max Res.   |  Compre. Ratio  |  Token Num.  |  Max Patch Num.  |                                           Training Data                                            | Download                                                                              |
+| Model              |  Max Res.   |  Compre. Ratio  |  Token Num.  |  Download |
 |--------------------|:-----------:|:---------------:|:------------:|:----------------:|:--------------------------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------|
-| VisualPrism-7b     |   336x336   |       1/4       |     144      |        -         |                                             558K+665K                                              | [checkpoints](https://huggingface.co/)  |
-| VisualPrism-13b     |   336x336   |       1/4       |     144      |        -         |                                             558K+665K                                              | [checkpoints](-) |
-| VisualPrism-7b  |  336x336  |       1/9       |     64     |         -          |                                             558K+665K                                              | [checkpoints](https://huggingface.co/) |
-| VisualPrism-7b |  336x336  |       1/16       |     36     |         -          |                                             558K+665K                                              | [checkpoints](-) |
-| VisualPrism-7b-Qwen |  336x336  |       1/4       |    144     |         -         |                                             1.2M+1.5M                                              | [checkpoints](-) |
-| VisualPrism-13b-Qwen |  336x336  |       1/4       |     144     |         -         |                                             1.2M+1.5M                                              | [checkpoints](-) |
+| VisualPrism-7b     |   336x336   |       1/4       |     144         | [checkpoints](https://huggingface.co/)  |
+| VisualPrism-13b     |   336x336   |       1/4       |     144      | [checkpoints](-) |
+| VisualPrism-7b  |  336x336  |       1/9       |     64     | [checkpoints](-) |
+| VisualPrism-7b |  336x336  |       1/16       |     36     | [checkpoints](-) |
+| VisualPrism-7b-Qwen |  336x336  |       1/4       |    144 | [checkpoints](-) |
+| VisualPrism-13b-Qwen |  336x336  |       1/4       |     144   | [checkpoints](-) |
 
+Note: ONLY VisualPrism-7b is available now. Others will be available soon.
 ## Visualization ✨
 VisualPrism provide visualization code for getting attention map of LLMs in LLaVA-series models.
 1. Install packages
