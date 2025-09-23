@@ -53,8 +53,8 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 |----------------|---------|------|--------|--------|--------|-------------|
 |  VisualPrism -7b  | **144** | 59.9 | 53.3   | 76.3   | 34.5   | 62.4        |
 |  VisualPrism-7b   | **64**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
-| VisualPrism-Qwen-7b  | **144**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
-| VisualPrism-Qwen-13b  | **144**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
+| VisualPrism-Qwen-7b  | **144**  | - | -   | -   | -   | -       |
+| VisualPrism-Qwen-13b  | **144**  | - | -   | -   | -   | -        |
 #### Ablation results
 ##### Ablation For Modules Proposed
 | TPQP | HKVE | VQAv2  | GQA |
@@ -76,11 +76,11 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 | Model              |  Max Res.   |  Compre. Ratio  |  Token Num.  |  Max Patch Num.  |                                           Training Data                                            | Download                                                                              |
 |--------------------|:-----------:|:---------------:|:------------:|:----------------:|:--------------------------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------|
 | VisualPrism-7b     |   336x336   |       1/4       |     144      |        -         |                                             558K+665K                                              | [checkpoints](https://huggingface.co/)  |
-| VisualPrism-13b     |   336x336   |       1/4       |     144      |        -         |                                             558K+665K                                              | [checkpoints](https://huggingface.co/) |
+| VisualPrism-13b     |   336x336   |       1/4       |     144      |        -         |                                             558K+665K                                              | [checkpoints](-) |
 | VisualPrism-7b  |  336x336  |       1/9       |     64     |         -          |                                             558K+665K                                              | [checkpoints](https://huggingface.co/) |
-| VisualPrism-7b |  336x336  |       1/16       |     36     |         -          |                                             558K+665K                                              | [checkpoints](https://huggingface.co/) |
-| VisualPrism-7b-Qwen |  336x336  |       1/4       |    144     |         -         |                                             1.2M+1.5M                                              | [checkpoints](https://huggingface.co/) |
-| VisualPrism-13b-Qwen |  336x336  |       1/4       |     144     |         -         |                                             1.2M+1.5M                                              | [checkpoints](https://huggingface.co/) |
+| VisualPrism-7b |  336x336  |       1/16       |     36     |         -          |                                             558K+665K                                              | [checkpoints](-) |
+| VisualPrism-7b-Qwen |  336x336  |       1/4       |    144     |         -         |                                             1.2M+1.5M                                              | [checkpoints](-) |
+| VisualPrism-13b-Qwen |  336x336  |       1/4       |     144     |         -         |                                             1.2M+1.5M                                              | [checkpoints](-) |
 
 ## Visualization ✨
 VisualPrism provide visualization code for getting attention map of LLMs in LLaVA-series models.
