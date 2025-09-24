@@ -82,7 +82,7 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 | VisualPrism-7b-Qwen |  336x336  |       1/4       |    144 | [checkpoints](-) |
 | VisualPrism-13b-Qwen |  336x336  |       1/4       |     144   | [checkpoints](-) |
 
-Note: ONLY VisualPrism-7b is available now. Others will be available soon.
+Note: ONLY VisualPrism-7b-144tokens is available now. Others will be available soon.
 ## Visualization ✨
 VisualPrism provide visualization code for getting attention map of LLMs in LLaVA-series models.
 1. Install packages
