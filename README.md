@@ -75,7 +75,7 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 
 | Model              |  Max Res.   |  Compre. Ratio  |  Token Num.  |  Download |
 |--------------------|:-----------:|:---------------:|:------------:|:---------:|
-| VisualPrism-7b     |   336x336   |       1/4       |     144         | [checkpoints](https://huggingface.co/)  |
+| VisualPrism-7b     |   336x336   |       1/4       |     144         | [checkpoints](https://huggingface.co/HRPP/VisualPrism-7b-144tokens)  |
 | VisualPrism-13b     |   336x336   |       1/4       |     144      | [checkpoints](-) |
 | VisualPrism-7b  |  336x336  |       1/9       |     64     | [checkpoints](-) |
 | VisualPrism-7b |  336x336  |       1/16       |     36     | [checkpoints](-) |
