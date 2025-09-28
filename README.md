@@ -53,7 +53,7 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 |----------------|---------|------|--------|--------|--------|-------------|
 |  VisualPrism -7b  | **144** | 59.9 | 53.3   | 76.3   | 34.5   | 62.4        |
 |  VisualPrism-7b   | **64**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
-| VisualPrism-Qwen-7b  | **144**  | - | -   | -   | -   | -       |
+| VisualPrism-13b  | **144**  | - | -   | -   | -   | -       |
 | VisualPrism-Qwen-13b  | **144**  | - | -   | -   | -   | -        |
 #### Ablation results
 ##### Ablation For Modules Proposed
@@ -79,10 +79,13 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 | VisualPrism-13b     |   336x336   |       1/4       |     144      | [checkpoints](-) |
 | VisualPrism-7b  |  336x336  |       1/9       |     64     | [checkpoints](-) |
 | VisualPrism-7b |  336x336  |       1/16       |     36     | [checkpoints](-) |
-| VisualPrism-7b-Qwen |  336x336  |       1/4       |    144 | [checkpoints](-) |
-| VisualPrism-13b-Qwen |  336x336  |       1/4       |     144   | [checkpoints](-) |
+| VisualPrism-7b-VIRAL |  336x336  |       1/4       |    144 | [checkpoints](-) |
+| VisualPrism-13b-VIRAL |  336x336  |       1/4       |     144   | [checkpoints](-) |
 
-Note: ONLY VisualPrism-7b-144tokens is available now. Others will be available soon.
+Note: 
+- ONLY VisualPrism-7b-144tokens is available now. Others will be available soon.
+- VIRAL is a regularization term designed for llava, improving the visual understanding capacity in complex senarios. For more details check the official [CODE](https://github.com/cvlab-kaist/VIRAL)
+
 ## Visualization ✨
 VisualPrism provide visualization code for getting attention map of LLMs in LLaVA-series models.
 1. Install packages
@@ -102,6 +105,7 @@ Hope the code will help you in your research🌷.
 ## Acknowledgement 💌
 - [LLaVA-v1.5](https://github.com/haotian-liu/LLaVA)
 - [TokenPacker](https://github.com/CircleRadon/TokenPacker)
+- [VIRAL](https://github.com/cvlab-kaist/VIRAL)
   
 ## More ## 
 For more recent related works, please refer to this repo of  [Awesome-Token-Compress](https://github.com/daixiangzi/Awesome-Token-Compress).
