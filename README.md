@@ -53,8 +53,8 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 |----------------|---------|------|--------|--------|--------|-------------|
 |  VisualPrism -7b  | **144** | 59.9 | 53.3   | 76.3   | 34.5   | 62.4        |
 |  VisualPrism-7b   | **64**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
-| VisualPrism-13b  | **144**  | - | -   | -   | -   | -       |
-| VisualPrism-Qwen-13b  | **144**  | - | -   | -   | -   | -        |
+| VisualPrism-13b  | **144**  | - | -  | - | -  | -  |
+| VisualPrism-Siglip-7b  | **144**  | 61.5 | 55.8  |  78.7  |  36.8   |  64.3  |
 #### Ablation results
 ##### Ablation For Modules Proposed
 | TPQP | HKVE | VQAv2  | GQA |
@@ -76,11 +76,11 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 | Model              |  Max Res.   |  Compre. Ratio  |  Token Num.  |  Download |
 |--------------------|:-----------:|:---------------:|:------------:|:---------:|
 | VisualPrism-7b     |   336x336   |       1/4       |     144         | [checkpoints](https://huggingface.co/HRPP/VisualPrism-7b-144tokens)  |
-| VisualPrism-13b     |   336x336   |       1/4       |     144      | [checkpoints](-) |
-| VisualPrism-7b  |  336x336  |       1/9       |     64     | [checkpoints](-) |
-| VisualPrism-7b |  336x336  |       1/16       |     36     | [checkpoints](-) |
-| VisualPrism-7b-VIRAL |  336x336  |       1/4       |    144 | [checkpoints](-) |
-| VisualPrism-13b-VIRAL |  336x336  |       1/4       |     144   | [checkpoints](-) |
+| VisualPrism-13b     |   336x336   |       1/4       |     144      | [checkpoints](https://huggingface.co/HRPP/VisualPrism-13b-144tokens) |
+| VisualPrism-7b  |  336x336  |       1/9       |     64     | [checkpoints](https://huggingface.co/HRPP/VisualPrism-7b-64tokens) |
+| VisualPrism-7b |  336x336  |       1/16       |     36     | [checkpoints](https://huggingface.co/HRPP/VisualPrism-7b-36tokens) |
+| VisualPrism-7b-VIRAL |  336x336  |       1/4       |    144 | [checkpoints](https://huggingface.co/HRPP/VisualPrism-7b-144tokens-VIRAL) |
+| VisualPrism-7b-siglip |  336x336  |       1/4       |     144   | [checkpoints](https://huggingface.co/HRPP/VisualPrism-7b-144tokens-siglip) |
 
 Note: 
 - ONLY VisualPrism-7b-144tokens is available now. Others will be available soon.
