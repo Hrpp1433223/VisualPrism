@@ -53,7 +53,7 @@ See [Evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluati
 |----------------|---------|------|--------|--------|--------|-------------|
 |  VisualPrism -7b  | **144** | 59.9 | 53.3   | 76.3   | 34.5   | 62.4        |
 |  VisualPrism-7b   | **64**  | 58.3 | 52.0   | 74.1   | 31.7   | 60.6        |
-| VisualPrism-13b  | **144**  | - | -  | - | -  | -  |
+| VisualPrism-13b  | **144**  | 61.0 | 53.4  | 77.4 | 36.7  | 63.6  |
 | VisualPrism-Siglip-7b  | **144**  | 61.5 | 55.8  |  78.7  |  36.8   |  64.3  |
 #### Ablation results
 ##### Ablation For Modules Proposed
